@@ -6,22 +6,13 @@ export const QUERY_ME = gql`
       _id
       username
       email
-      friendCount
-      thoughts {
-        _id
-        thoughtText
-        createdAt
-        reactionCount
-        reactions {
-          _id
-          createdAt
-          reactionBody
-          username
-        }
-      }
-      friends {
-        _id
-        username
+      savedBooks {
+        bookId
+        authors
+        describtion
+        image
+        link 
+        title
       }
     }
   }
