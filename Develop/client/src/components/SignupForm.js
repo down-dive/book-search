@@ -30,15 +30,17 @@ const SignupForm = () => {
       event.preventDefault();
       event.stopPropagation();
     }
+    let test = JSON.stringify(userFormData)
 
+    console.log(`!!!!!!!!!!!!!!!!!!!!!!!!${test}!!!!!!!!!!!!!!!!!!!!!!!`)
     try {
-      const { data } = await addUser({
-              variables: { ...userFormData },
-            });
-
-      // if (!response.ok) {
-      //   throw new Error('something went wrong!');
-      // }
+      const data = await addUser({
+        variables: {...userFormData}
+      });
+      console.log("!!!!!!!!!!!youve hit 38!!!!!")
+                  if (!data.ok) {
+        throw new Error('something went wrong!');
+      }
       console.log(data);
       Auth.login(data.addUser.token);
     } catch (err) {

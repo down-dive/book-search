@@ -33,6 +33,8 @@ const SearchBooks = () => {
       return false;
     }
 
+    console.log(`!!!!!!!!!!!!!!!!!!!${searchInput}`)
+
     try {
       const response = await searchGoogleBooks(searchInput);
 
