@@ -100,7 +100,7 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Deployed Application
 
-Please use the following link to view the deployed application on Heroku: [Deployed App](https://blooming-basin-29879.herokuapp.com/)
+Please use the following link to view the deployed application on Heroku: [Deployed App](https://book-search-yev.herokuapp.com/)
 
 ## Questions
 
